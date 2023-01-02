@@ -53,4 +53,6 @@ CONTINUE FROM "The MNIST Loss Function" in chapter 4
 - Learning rate
   What you multiply the gradient with to change parameters of the model.
 
-### Question
+### Questions
+
+
