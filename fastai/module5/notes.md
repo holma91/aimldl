@@ -33,9 +33,18 @@ In essence a random forest is a model that averages the predictions of a large n
 The OOB error is a way of measuring prediction error on the training set by only including in the calculation of a row's error trees where that row was not included in training. Since every tree was trained with a different randomly selected subset of rows, out-of-bag error is a little like imagining that every tree therefore also has its own validation set (the rows that were not selected for that tree's training).
 
 
+Random forests are easy to interpret, and as a result it's easy to remove unimportant stuff from it. 
 
+Partial dependence plots try to answer the question: if a row varied on nothing other than the feature in question, how would it impact the dependent variable?
 
+### Extrapolation 
+important q: what algorithms generalizes the best to new data?
 
+A tree and a random forest can never predict values outside of the range of the training data. This is particularly problematic for data where there is a trend over time (e.g inflation) and you wish to make predictions for a future time.
+
+Random forests basically can't extrapolate, so we need to make sure our validation set doesn't contain out-of-domain data.
+
+### Neural Networks
 
 ## Words
 
