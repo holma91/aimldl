@@ -10,7 +10,7 @@ Deep learning isn't everything. With tabular data, it's worth taking a look at c
 
 Recent studies have shown that the vast majority of datasets can be best modeled with just two methods:
 
-- Ensembles of decision trees (i.e., random forests and gradient boosting machines),    mainly for structured data (such as you might find in a database table at most companies)
+- Ensembles of decision trees (i.e., random forests and gradient boosting machines), mainly for structured data (such as you might find in a database table at most companies)
 - Multilayered neural networks learned with SGD (i.e., shallow and/or deep learning), mainly for unstructured data (such as audio, images, and natural language)
 
 While deep learning is nearly ALWAYS superior for unstructured data, the two methods give similar results on structured data. Ensembles of decision trees have the following pros:
