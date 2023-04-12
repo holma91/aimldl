@@ -1,3 +1,6 @@
 [submodule "fastai/fastai_pet_classifier"]
 	path = fastai/fastai_pet_classifier
 	url = https://huggingface.co/spaces/holma91/fastai_pet_classifier
+[submodule "DeepLearningPython"]
+	path = DeepLearningPython
+	url = git@github.com:MichalDanielDobrzanski/DeepLearningPython.git

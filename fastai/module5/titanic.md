@@ -30,3 +30,31 @@ create a loss function
 
 split the data into training and validation sets
 
+
+
+n(leaf) = 1
+n(t(A, B)) = 1 + n(A) + n(B)
+
+
+on(leaf) = 0
+on(t(A, B)) = n(A) + n(B) - on(A) - on(B)
+
+
+n(t(t(leaf, leaf), leaf)) = 1 + n(t(leaf, leaf)) + n(leaf)
+                          = 1 + (1 + n(leaf) + n(leaf)) + 1
+                          = 1 + 1 + 1 + 1 + 1 
+                          = 5
+
+
+on(t(t(leaf, leaf), leaf)) = n(t(leaf, leaf)) + n(leaf) - on(t(leaf, leaf)) - on(leaf)
+                           = 3 + 1 - (n(leaf) + n(leaf) - on(leaf) - on(leaf)) - 0
+                           = 3 + 1 - (1 + 1 - 0 - 0) - 0 
+                           = 4 - 1 - 1 = 2
+
+A = leaf, B = t(t(leaf, leaf), leaf)
+on(t(leaf, t(t(leaf, leaf), leaf))) = n(leaf) + n(t(t(leaf, leaf), leaf)) - on(leaf) - on(t(t(leaf, leaf), leaf))
+                                    = 1 + 5 - 0 - 2
+                                    = 4
+
+
+                                    
