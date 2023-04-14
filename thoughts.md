@@ -1,2 +1,2 @@
 - models will be commoditized
-- proprietary data will be the shit
+- proprietary data will be the shit (or is this midwittery?)
