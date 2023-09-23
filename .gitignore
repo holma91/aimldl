@@ -4,3 +4,4 @@ env
 .DS_Store
 pytorch/data
 .ipynb_checkpoints
+kaggle/*/data
